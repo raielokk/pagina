@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>contadores</title>
+        <style>
+            table{
+                font-size: 40px;
+                border: solid 2px black;
+                color: red;
+                margin: auto; 
+                border-collapse: collapse;        
+            }
+            td{
+                border: solid 2px black;
+            }
+        </style>
+    </head>
+    <html>
+        <table>
+            <tr>
+                <td>Nome</td>
+                <td>Qtd</td>
+                <td>Opções</td>
+            </tr>
+            <tr>
+                <td>Copos d'água</td>
+                <td id="numero">2</td>
+                <td><button type="button" onclick="mais()">+</button><button onclick="menos()">-</button></td>
+            </tr>
+            <tr>
+                <td>Pontos</td>
+                <td id="numero1">12</td>
+                <td><button type="button" onclick="mais1()">+</button><button onclick="menos1()">-</button></td>
+            </tr>
+            <tr>
+                <td>Voltas na quadra</td>
+                <td id="numero2">1</td>
+                <td><button type="button" onclick="mais2()">+</button><button onclick="menos2()">-</button></td>
+            </tr>
+            <tr>
+                <td>Idas ao banheiro</td>
+                <td id="numero3">1</td>
+                <td><button type="button" onclick="mais3()">+</button><button onclick="menos3()">-</button></td>
+            </tr>
+            <tr>
+                <td>Fuscas Azuis</td>
+                <td id="numero4">0</td>
+                <td><button type="button" onclick="mais4()">+</button><button onclick="menos4()">-</button></td>
+            </tr>
+        </table>
+    </html>
+    <script>
+        function mais(){
+            numero = document.getElementById("numero")
+            soma=parseInt(numero.innerHTML)+1
+            numero.innerHTML=soma
+        }
+        function menos(){
+            numero = document.getElementById("numero")
+            subtracao = parseInt(numero.innerHTML)-1
+            numero.innerHTML=subtracao
+        }
+        function mais1(){
+            numero = document.getElementById("numero1")
+            soma=parseInt(numero.innerHTML)+1
+            numero.innerHTML=soma  
+        }
+        function menos1(){
+            numero = document.getElementById("numero1")
+            subtracao = parseInt(numero.innerHTML)-1
+            numero.innerHTML=subtracao
+        }
+        function mais2(){
+            numero = document.getElementById("numero2")
+            soma=parseInt(numero.innerHTML)+1
+            numero.innerHTML=soma
+        }
+        function menos2(){
+            numero = document.getElementById("numero2")
+            subtracao = parseInt(numero.innerHTML)-1
+            numero.innerHTML=subtracao
+        }
+        function mais3(){
+            numero = document.getElementById("numero3")
+            soma=parseInt(numero.innerHTML)+1
+            numero.innerHTML=soma
+        }
+        function menos3(){
+            numero = document.getElementById("numero3")
+            subtracao = parseInt(numero.innerHTML)-1
+            numero.innerHTML=subtracao
+        }
+        function mais4(){
+            numero = document.getElementById("numero4")
+            soma=parseInt(numero.innerHTML)+1
+            numero.innerHTML=soma
+        }
+        function menos4(){
+            numero = document.getElementById("numero4")
+            subtracao = parseInt(numero.innerHTML)-1
+            numero.innerHTML=subtracao
+        }
+    </script>
+</html>
